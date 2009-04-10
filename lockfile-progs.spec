@@ -13,6 +13,7 @@ BuildRoot:	%_tmppath/%{name}-%{version}-root-%(id -u -n)
 Source0:	http://ftp.debian.org/debian/pool/main/l/lockfile-progs/lockfile-progs_0.1.10.tar.bz2
 # http://bugs.debian.org/cgi-bin/bugreport.cgi/diff.out?bug=244314;msg=10;att=1
 Patch0:		lockfile-progs-0.1.10.manpage.patch
+Patch1:		lockfile-progs-0.1.10-fix-str-fmt.patch
 BuildRequires:	lockfile-devel
 
 %description
@@ -22,6 +23,7 @@ mailboxes from the command line.
 %prep 
 %setup -q
 %patch0 -p1 -b .orig
+%patch1 -p0 -b .str
 
 %build
 %make CFLAGS="%{optflags}"
