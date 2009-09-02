@@ -1,6 +1,6 @@
 %define name	lockfile-progs
 %define version	0.1.10
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 Summary:	Programs for locking and unlocking files and mailboxes
 Name:		%{name}
