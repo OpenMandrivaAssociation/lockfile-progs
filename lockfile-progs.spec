@@ -1,11 +1,11 @@
 %define name	lockfile-progs
 %define version	0.1.10
-%define release	%mkrel 5
+%define release	%mkrel 6
 
 Summary:	Programs for locking and unlocking files and mailboxes
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	GPL
 Group:		System/Base
 URL:		http://packages.qa.debian.org/lockfile-progs
