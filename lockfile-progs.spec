@@ -29,13 +29,13 @@ mailboxes from the command line.
 %make CFLAGS="%{optflags}"
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_mandir}
-cp -a bin $RPM_BUILD_ROOT%{_bindir}
-cp -a man $RPM_BUILD_ROOT%{_mandir}/man1
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_mandir}
+cp -a bin %{buildroot}%{_bindir}
+cp -a man %{buildroot}%{_mandir}/man1
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
