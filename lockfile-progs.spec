@@ -1,7 +1,7 @@
 Summary:	Programs for locking and unlocking files and mailboxes
 Name:		lockfile-progs
 Version:	0.1.17
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		System/Base
 Url:		http://packages.qa.debian.org/lockfile-progs
