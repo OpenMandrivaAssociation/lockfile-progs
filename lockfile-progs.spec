@@ -1,3 +1,5 @@
+%define disable_lto 1
+
 Summary:	Programs for locking and unlocking files and mailboxes
 Name:		lockfile-progs
 Version:	0.1.17
@@ -18,7 +20,7 @@ mailboxes from the command line.
 %apply_patches
 
 %build
-%make CFLAGS="%{optflags}" CC=%{__cc}
+%make CFLAGS="%{optflags} -fno-lto" CC=%{__cc}
 
 %install
 mkdir -p %{buildroot}%{_mandir}
