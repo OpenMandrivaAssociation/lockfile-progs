@@ -2,7 +2,7 @@
 
 Summary:	Programs for locking and unlocking files and mailboxes
 Name:		lockfile-progs
-Version:	0.1.17
+Version:	0.1.18
 Release:	5
 License:	GPLv2
 Group:		System/Base
