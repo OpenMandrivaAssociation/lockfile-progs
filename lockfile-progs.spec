@@ -17,7 +17,7 @@ mailboxes from the command line.
 
 %prep 
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %make CFLAGS="%{optflags} -fno-lto" CC=%{__cc}
