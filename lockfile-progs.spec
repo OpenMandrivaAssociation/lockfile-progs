@@ -6,7 +6,7 @@ Version:	0.1.19
 Release:	2
 License:	GPLv2
 Group:		System/Base
-Url:		http://packages.qa.debian.org/lockfile-progs
+Url:		https://packages.qa.debian.org/lockfile-progs
 Source0:	http://ftp.debian.org/debian/pool/main/l/lockfile-progs/%{name}_%{version}.tar.gz
 # http://bugs.debian.org/cgi-bin/bugreport.cgi/diff.out?bug=244314;msg=10;att=1
 BuildRequires:	lockfile-devel
